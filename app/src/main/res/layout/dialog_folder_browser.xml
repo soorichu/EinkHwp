@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- 현재 위치 경로 -->
+    <TextView
+        android:id="@+id/tvDialogCurrentPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 상위 폴더 이동 버튼 -->
+    <Button
+        android:id="@+id/btnUpFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⬆ 상위 폴더로 이동 (..)"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/btn_eink_border"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="8dp" />
+
+    <!-- 폴더 및 HWP 파일 리스트뷰 -->
+    <ListView
+        android:id="@+id/lvFolders"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:choiceMode="singleChoice"
+        android:divider="#000000"
+        android:dividerHeight="1dp" />
+
+    <!-- 선택 완료 버튼 (폴더 또는 파일 적용) -->
+    <Button
+        android:id="@+id/btnSelectCurrentFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HWP 파일 또는 폴더 선택"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@drawable/btn_eink_border"
+        app:backgroundTint="@null"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

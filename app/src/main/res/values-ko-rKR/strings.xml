@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EinkHwp</string>
+    <string name="navigator">Eink 탐색기</string>
+    <string name="internal_storage">내부 저장소</string>
+    <string name="external_storage">외부 저장소</string>
+    <string name="browse_folder">폴더/HWP 탐색</string>
+    <string name="user_folder">사용자 폴더 위치</string>
+    <string name="select_font">사용자 폰트 찾기</string>
+    <string name="user_font">폰트: 기본 시스템 폰트</string>
+    <string name="empty_message">폴더 files 밖에 보이지 않는다면 앱 공용폴더에 HWP을 놓아주세요.\n* 앱 공용폴더 위치:[저장소]/Android/data/cloud.einknote.hwpviewer/files</string>
+    <string name="extract_epub">EPUB 추출</string>
+    <string name="back">◁</string>
+    <string name="font_decrease">가-</string>
+    <string name="font_increase">가+</string>
+    <string name="scroll_up">▲</string>
+    <string name="scroll_down">▼</string>
+</resources>

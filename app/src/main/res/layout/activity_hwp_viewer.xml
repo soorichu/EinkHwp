@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- 본문 웹뷰 -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 좌측 상단 뒤로가기 버튼 (반투명 0.5) -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="16dp"
+        android:alpha="0.5"
+        android:text="@string/back"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@drawable/btn_eink_border"
+        app:backgroundTint="@null"
+        android:padding="0dp" />
+
+    <!-- 좌측 하단 글씨 크기 조절 버튼 그룹 (반투명 0.5) -->
+    <LinearLayout
+        android:id="@+id/layoutFontButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:alpha="0.5">
+
+        <Button
+            android:id="@+id/btnFontDecrease"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="@string/font_decrease"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:background="@drawable/btn_eink_border"
+            app:backgroundTint="@null"
+            android:padding="0dp"
+            android:layout_marginEnd="6dp" />
+
+        <Button
+            android:id="@+id/btnFontIncrease"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="@string/font_increase"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:background="@drawable/btn_eink_border"
+            app:backgroundTint="@null"
+            android:padding="0dp" />
+    </LinearLayout>
+
+    <!-- 하단 중앙 파일 제목 (반투명 0.5, 좌우 마진 110dp로 버튼과 겹침 방지) -->
+    <TextView
+        android:id="@+id/tvViewerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="116dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:alpha="0.5" />
+
+    <!-- 우측 하단 스크롤 버튼 그룹 (반투명 0.5) -->
+    <LinearLayout
+        android:id="@+id/layoutScrollButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:alpha="0.5">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="@string/scroll_up"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:background="@drawable/btn_eink_border"
+            app:backgroundTint="@null"
+            android:padding="0dp"
+            android:layout_marginEnd="6dp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="@string/scroll_down"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:background="@drawable/btn_eink_border"
+            app:backgroundTint="@null"
+            android:padding="0dp" />
+    </LinearLayout>
+
+</FrameLayout>
